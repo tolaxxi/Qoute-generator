@@ -3,3 +3,80 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #bbc6fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: serif;
+}
+
+.quoteContainer {
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quoteContainer h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.quoteContainer h2::after {
+  content: '';
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.quoteContainer blockquote {
+  font-size: 26px;
+  min-height: 110px;
+  text-align: center;
+}
+
+.quoteContainer blockquote::before,
+.quoteContainer blockquote::after {
+  content: '"';
+}
+.quoteContainer span {
+  display: block;
+  margin: 10px 0px;
+  float: right;
+  position: relative;
+}
+
+.quoteContainer span::before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: rgb(23, 124, 229);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.quoteAuthor {
+  width: 100%;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(23, 124, 229);
+  margin-right: 10px;
+  color: #fff;
+}
