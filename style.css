@@ -72,11 +72,29 @@ body {
 }
 
 button {
-  width: 100px;
+  width: 120px;
+  height: 40px;
   padding: 10px;
   border: none;
   border-radius: 20px;
   background-color: rgb(23, 124, 229);
   margin-right: 10px;
   color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.tweet {
+  background-color: transparent;
+  border: 1px solid rgb(23, 124, 229);
+  color: black;
+}
+.fa-twitter {
+  font-size: 1rem;
+  margin-right: 10px;
+  color: rgb(23, 124, 229);
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
